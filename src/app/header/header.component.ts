@@ -8,6 +8,7 @@ export class HeaderComponent {
   @Output() featureSelected = new EventEmitter<string>();
 
   onSelect(feature: string) {
+    // onSelect from header.component.html with eventemitter we take value
     this.featureSelected.emit(feature);
   }
 }
